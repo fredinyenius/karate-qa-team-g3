@@ -94,3 +94,15 @@ Feature: Ejercicios clase 02
     * print response
     And match response == read( 'estructura-response.json')
 
+  Scenario Outline: Caso 16 - Crear un post con CSV
+    Given url "https://jsonplaceholder.typicode.com"
+    And path "/posts"
+    And request {'userId': <userId>,'title': <title>,'body': <body>}
+    When method post
+    Then status 201
+    * print response
+    And match response == read( 'estructura-response.json')
+    * print '<userId>'
+
+    Examples:
+      | read('data.csv') |
