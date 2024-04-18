@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("4e1a01a6-09d5-4660-ab05-42dd046bb6d1",{name:"LEGION"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.examples.users.ejersicios</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-04-15 08:34:34 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[7:80]"><span>[7:80]</span> <span>Caso 15 - Crear un post con JSON en variable</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/examples/users/ejersicios.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Ejercicios clase 02</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:80]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:80]</span>
+                <span class="scenario-name">Caso 15 - Crear un post con JSON en variable</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1240</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def body =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">44</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.81">{
+  &#39;userId&#39;: 1,
+  &#39;title&#39;: &#39;Post de prueba&#39;,
+  &#39;body&#39;: &#39;Post de prueba&#39;
+}</div>
+
+  
+
+  <div class="preformatted" data-parent="0.81">20:34:33.134 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.89">
+      <div class="step-ref passed">89</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.90">
+      <div class="step-ref passed">90</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref passed">91</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1178</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.92">20:34:33.802 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 61
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_401)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;userId&quot;:1,&quot;title&quot;:&quot;Post de prueba&quot;,&quot;body&quot;:&quot;Post de prueba&quot;}
+
+20:34:34.391 response time in milliseconds: 587
+1 &lt; 201
+1 &lt; Date: Tue, 16 Apr 2024 01:34:34 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 87
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713231274&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=ifnRM04TVlY5gd4YDAKE1tb11FQqXJdYJur3UWqdUAc%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713231274&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=ifnRM04TVlY5gd4YDAKE1tb11FQqXJdYJur3UWqdUAc%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 998
+1 &lt; X-Ratelimit-Reset: 1713231292
+1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: no-cache
+1 &lt; Pragma: no-cache
+1 &lt; Expires: -1
+1 &lt; Access-Control-Expose-Headers: Location
+1 &lt; Location: https://jsonplaceholder.typicode.com/posts/101
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Etag: W/&quot;57-ibLi49RweUyi9XcMMoKoQ/l6cg8&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 87506f08592812df-ATL
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;userId&quot;: 1,
+  &quot;title&quot;: &quot;Post de prueba&quot;,
+  &quot;body&quot;: &quot;Post de prueba&quot;,
+  &quot;id&quot;: 101
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.94">20:34:34.393 [print] {
+  &quot;userId&quot;: 1,
+  &quot;title&quot;: &quot;Post de prueba&quot;,
+  &quot;body&quot;: &quot;Post de prueba&quot;,
+  &quot;id&quot;: 101
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == read( &#39;estructura-response.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

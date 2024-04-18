@@ -1,0 +1,636 @@
+19:13:46.534 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:13:46.565 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7 - ^Caso 10 \- Actualizar Ususario$
+19:13:47.468 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:13:47.522 [main] ERROR com.intuit.karate - src/test/java/examples/users/ejersicios.feature:9
+And path "/api/users/" + id
+js failed:
+>>>>
+01: "/api/users/" + id
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "id" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/ejersicios.feature:9
+19:13:48.205 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/ejersicios.feature
+19:15:15.528 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:15:15.531 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1713226515530
+19:15:15.555 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7 - ^Caso 10 \- Actualizar Ususario$
+19:15:16.350 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:15:17.170 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 31
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_401)
+1 > Accept-Encoding: gzip,deflate
+name=morpheus&job=zion+resident
+
+19:15:17.874 [main] DEBUG com.intuit.karate - response time in milliseconds: 702
+1 < 200
+1 < Date: Tue, 16 Apr 2024 00:15:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713226517&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=lEz8rIPD9u4DcnZa5lEUKpbELH9bI03i9xFF7gto3mU%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713226517&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=lEz8rIPD9u4DcnZa5lEUKpbELH9bI03i9xFF7gto3mU%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"50-WsBBP7EtZhQPkjAVS0AdE8GecGE"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 874ffae6fb414c12-MIA
+{"name":"morpheus","job":"zion resident","updatedAt":"2024-04-16T00:15:17.804Z"}
+
+19:15:18.445 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/ejersicios.feature
+19:34:50.308 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:34:50.311 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1713227690311
+19:34:50.334 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 30 - ^Caso 12 \- Buscar comentarios por postId$
+19:34:51.085 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:34:51.624 [main] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/comments?postId=1
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_401)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:34:52.082 [main] DEBUG com.intuit.karate - response time in milliseconds: 455
+1 < 200
+1 < Date: Tue, 16 Apr 2024 00:34:52 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713211632&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=D2aTDuDiw%2FC41psB2j31bQZZer2alvCjQqDA2iPTGeM%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713211632&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=D2aTDuDiw%2FC41psB2j31bQZZer2alvCjQqDA2iPTGeM%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 998
+1 < X-Ratelimit-Reset: 1713211672
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"5e6-4bSPS5tq8F8ZDeFJULWh6upjp7U"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 16060
+1 < Server: cloudflare
+1 < CF-RAY: 875017938ea8daed-MIA
+1 < alt-svc: h3=":443"; ma=86400
+[
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "id labore ex et quam laborum",
+    "email": "Eliseo@gardner.biz",
+    "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+  },
+  {
+    "postId": 1,
+    "id": 2,
+    "name": "quo vero reiciendis velit similique earum",
+    "email": "Jayne_Kuhic@sydney.com",
+    "body": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
+  },
+  {
+    "postId": 1,
+    "id": 3,
+    "name": "odio adipisci rerum aut animi",
+    "email": "Nikita@garfield.biz",
+    "body": "quia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est\ncum et ducimus et vero voluptates excepturi deleniti ratione"
+  },
+  {
+    "postId": 1,
+    "id": 4,
+    "name": "alias odio sit",
+    "email": "Lew@alysha.tv",
+    "body": "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati"
+  },
+  {
+    "postId": 1,
+    "id": 5,
+    "name": "vero eaque aliquid doloribus et culpa",
+    "email": "Hayden@althea.biz",
+    "body": "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et"
+  }
+]
+
+19:34:52.587 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/ejersicios.feature
+19:48:07.295 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:48:07.298 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1713228487298
+19:48:07.317 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 37 - ^Caso 13 \- Crear un post con docString en variable$
+19:48:08.051 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:48:08.095 [main] ERROR com.intuit.karate - src/test/java/examples/users/ejersicios.feature:48
+And request body
+js failed:
+>>>>
+01: body
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "body" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/ejersicios.feature:48
+19:48:08.703 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/ejersicios.feature
+19:53:40.181 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:53:40.184 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1713228820184
+19:53:40.207 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 37 - ^Caso 13 \- Crear un post con docString en variable$
+19:53:41.178 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:53:42.313 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_401)
+1 > Accept-Encoding: gzip,deflate
+{"userId":1,"title":"Post de prueba","body":"Post de prueba"}
+
+19:53:42.805 [main] DEBUG com.intuit.karate - response time in milliseconds: 490
+1 < 201
+1 < Date: Tue, 16 Apr 2024 00:53:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713228822&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=xbr917gprLgloXt%2Fm1i2zczjZHHJyCQ28%2FfqGzleUD0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713228822&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=xbr917gprLgloXt%2Fm1i2zczjZHHJyCQ28%2FfqGzleUD0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1713228832
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/posts/101
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"57-ibLi49RweUyi9XcMMoKoQ/l6cg8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 8750332e3eeb2203-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 1,
+  "title": "Post de prueba",
+  "body": "Post de prueba",
+  "id": 101
+}
+
+19:53:42.809 [main] INFO  com.intuit.karate - [print] {
+  "userId": 1,
+  "title": "Post de prueba",
+  "body": "Post de prueba",
+  "id": 101
+}
+ 
+19:53:42.820 [main] ERROR com.intuit.karate - src/test/java/examples/users/ejersicios.feature:53
+And match response.body == "Body de prueba"
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Post de prueba'
+  'Body de prueba'
+
+src/test/java/examples/users/ejersicios.feature:53
+19:53:43.015 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:53:43.018 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1713228823018
+19:53:43.046 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 37 - ^Caso 13 \- Crear un post con docString en variable$
+19:53:43.471 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/ejersicios.feature
+19:53:43.996 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:53:44.991 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_401)
+1 > Accept-Encoding: gzip,deflate
+{"userId":1,"title":"Post de prueba","body":"Post de prueba"}
+
+19:53:45.481 [main] DEBUG com.intuit.karate - response time in milliseconds: 488
+1 < 201
+1 < Date: Tue, 16 Apr 2024 00:53:45 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713228825&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=CCzRY9P%2FUQ4%2B54BRW9ETusVZYQmEmFKzSuTPQD4mHdQ%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713228825&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=CCzRY9P%2FUQ4%2B54BRW9ETusVZYQmEmFKzSuTPQD4mHdQ%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 998
+1 < X-Ratelimit-Reset: 1713228832
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/posts/101
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"57-ibLi49RweUyi9XcMMoKoQ/l6cg8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 8750333eda90ad88-ATL
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 1,
+  "title": "Post de prueba",
+  "body": "Post de prueba",
+  "id": 101
+}
+
+19:53:45.484 [main] INFO  com.intuit.karate - [print] {
+  "userId": 1,
+  "title": "Post de prueba",
+  "body": "Post de prueba",
+  "id": 101
+}
+ 
+19:53:45.497 [main] ERROR com.intuit.karate - src/test/java/examples/users/ejersicios.feature:53
+And match response.body == "Body de prueba"
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Post de prueba'
+  'Body de prueba'
+
+src/test/java/examples/users/ejersicios.feature:53
+19:53:46.114 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/ejersicios.feature
+19:53:57.302 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:53:57.304 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1713228837304
+19:53:57.326 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 37 - ^Caso 13 \- Crear un post con docString en variable$
+19:53:58.155 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:53:58.884 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_401)
+1 > Accept-Encoding: gzip,deflate
+{"userId":1,"title":"Post de prueba","body":"Post de prueba"}
+
+19:53:59.381 [main] DEBUG com.intuit.karate - response time in milliseconds: 494
+1 < 201
+1 < Date: Tue, 16 Apr 2024 00:53:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713228839&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=QMc2xa24QpfQrrC1WYELhjDTB8%2F07LuzOqqikSlxxEw%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713228839&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=QMc2xa24QpfQrrC1WYELhjDTB8%2F07LuzOqqikSlxxEw%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1713228892
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/posts/101
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"57-ibLi49RweUyi9XcMMoKoQ/l6cg8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 87503395bb18b06a-ATL
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 1,
+  "title": "Post de prueba",
+  "body": "Post de prueba",
+  "id": 101
+}
+
+19:53:59.384 [main] INFO  com.intuit.karate - [print] {
+  "userId": 1,
+  "title": "Post de prueba",
+  "body": "Post de prueba",
+  "id": 101
+}
+ 
+19:53:59.392 [main] ERROR com.intuit.karate - src/test/java/examples/users/ejersicios.feature:53
+And match response.body == "Body de prueba"
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Post de prueba'
+  'Body de prueba'
+
+src/test/java/examples/users/ejersicios.feature:53
+19:53:59.930 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/ejersicios.feature
+20:22:36.444 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/examples/users/ejersicios.feature - mismatched input '"' expecting <EOF>
+20:22:57.534 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:22:57.538 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1713230577537
+20:22:57.559 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 56 - ^Caso 14 \- Crear un post con docString en variable$
+20:22:58.312 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:22:59.003 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_401)
+1 > Accept-Encoding: gzip,deflate
+{"userId":1,"title":"Post de prueba","body":"Post de prueba"}
+
+20:22:59.754 [main] DEBUG com.intuit.karate - response time in milliseconds: 750
+1 < 201
+1 < Date: Tue, 16 Apr 2024 01:22:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713230579&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=7lj1x3T1tCPYTW8PC3b6a0XL5uv0ScwOTPaeq00rCTw%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713230579&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=7lj1x3T1tCPYTW8PC3b6a0XL5uv0ScwOTPaeq00rCTw%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1713230632
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/posts/101
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"57-ibLi49RweUyi9XcMMoKoQ/l6cg8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 87505e12ca8e1375-ATL
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 1,
+  "title": "Post de prueba",
+  "body": "Post de prueba",
+  "id": 101
+}
+
+20:22:59.756 [main] INFO  com.intuit.karate - [print] {
+  "userId": 1,
+  "title": "Post de prueba",
+  "body": "Post de prueba",
+  "id": 101
+}
+ 
+20:23:00.242 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/ejersicios.feature
+20:33:18.121 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:33:18.124 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1713231198124
+20:33:18.148 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 80 - ^Caso 15 \- Crear un post con JSON en variable$
+20:33:18.932 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:33:19.604 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_401)
+1 > Accept-Encoding: gzip,deflate
+{"userId":1,"title":"Post de prueba","body":"Post de prueba"}
+
+20:33:20.299 [main] DEBUG com.intuit.karate - response time in milliseconds: 694
+1 < 201
+1 < Date: Tue, 16 Apr 2024 01:33:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713231200&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=nhF4JSYqxV13ilaJ8E59LetDIYDQOZFXUDKHB1ziOvw%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713231200&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=nhF4JSYqxV13ilaJ8E59LetDIYDQOZFXUDKHB1ziOvw%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1713231232
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/posts/101
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"57-ibLi49RweUyi9XcMMoKoQ/l6cg8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 87506d39884a02e0-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 1,
+  "title": "Post de prueba",
+  "body": "Post de prueba",
+  "id": 101
+}
+
+20:33:20.302 [main] INFO  com.intuit.karate - [print] {
+  "userId": 1,
+  "title": "Post de prueba",
+  "body": "Post de prueba",
+  "id": 101
+}
+ 
+20:33:20.806 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/ejersicios.feature
+20:34:00.425 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:34:00.430 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1713231240429
+20:34:00.449 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 80 - ^Caso 15 \- Crear un post con JSON en variable$
+20:34:01.155 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:34:01.798 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_401)
+1 > Accept-Encoding: gzip,deflate
+{"userId":1,"title":"Post de prueba","body":"Post de prueba"}
+
+20:34:02.462 [main] DEBUG com.intuit.karate - response time in milliseconds: 662
+1 < 201
+1 < Date: Tue, 16 Apr 2024 01:34:02 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713231242&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Y9YWJEL9h5EVm7w369oTJD8EuZL%2BNrBSu5xqKxx574U%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713231242&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Y9YWJEL9h5EVm7w369oTJD8EuZL%2BNrBSu5xqKxx574U%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1713231292
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/posts/101
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"57-ibLi49RweUyi9XcMMoKoQ/l6cg8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 87506e4099fa52a0-TLH
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 1,
+  "title": "Post de prueba",
+  "body": "Post de prueba",
+  "id": 101
+}
+
+20:34:02.464 [main] INFO  com.intuit.karate - [print] {
+  "userId": 1,
+  "title": "Post de prueba",
+  "body": "Post de prueba",
+  "id": 101
+}
+ 
+20:34:02.476 [main] ERROR com.intuit.karate - src/test/java/examples/users/ejersicios.feature:95
+And match response == read( 'estructura-response.json')
+match failed: EQUALS
+  $ | not equal | match failed for name: 'id' (MAP:MAP)
+  {"userId":1,"title":"Post de prueba","body":"Post de prueba","id":101}
+  {"userId":"#number","title":"#string","body":"#string","id":"#string"}
+
+    $.id | not a string (NUMBER:STRING)
+    101
+    '#string'
+
+src/test/java/examples/users/ejersicios.feature:95
+20:34:02.926 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/ejersicios.feature
+20:34:32.253 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:34:32.258 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1713231272257
+20:34:32.285 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 80 - ^Caso 15 \- Crear un post con JSON en variable$
+20:34:33.134 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:34:33.802 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_401)
+1 > Accept-Encoding: gzip,deflate
+{"userId":1,"title":"Post de prueba","body":"Post de prueba"}
+
+20:34:34.391 [main] DEBUG com.intuit.karate - response time in milliseconds: 587
+1 < 201
+1 < Date: Tue, 16 Apr 2024 01:34:34 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713231274&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=ifnRM04TVlY5gd4YDAKE1tb11FQqXJdYJur3UWqdUAc%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713231274&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=ifnRM04TVlY5gd4YDAKE1tb11FQqXJdYJur3UWqdUAc%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 998
+1 < X-Ratelimit-Reset: 1713231292
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/posts/101
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"57-ibLi49RweUyi9XcMMoKoQ/l6cg8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 87506f08592812df-ATL
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "userId": 1,
+  "title": "Post de prueba",
+  "body": "Post de prueba",
+  "id": 101
+}
+
+20:34:34.393 [main] INFO  com.intuit.karate - [print] {
+  "userId": 1,
+  "title": "Post de prueba",
+  "body": "Post de prueba",
+  "id": 101
+}
+ 
+20:34:34.893 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/ejersicios.feature
+21:20:21.114 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:20:21.117 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1713234021117
+21:20:21.855 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:20:22.545 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Authorization: Bearer null
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_401)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+21:20:23.663 [main] DEBUG com.intuit.karate - response time in milliseconds: 1116
+1 < 201
+1 < Date: Tue, 16 Apr 2024 02:20:23 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713234023&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4FjC713NO5zn1knl%2F1VqQsYNcUpJFTXC%2FD%2FyN9HkbyI%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713234023&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4FjC713NO5zn1knl%2F1VqQsYNcUpJFTXC%2FD%2FyN9HkbyI%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-oxkojz2YABXrUtttj8gi+rL7zmQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 8750b225e92225a1-MIA
+{"name":"morpheus","job":"leader","id":"276","createdAt":"2024-04-16T02:20:23.561Z"}
+
+21:20:24.156 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/user-sesion5.feature
+18:34:22.928 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:34:22.933 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1713396862932
+18:34:22.955 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 9 - ^Caso 1$
+18:34:23.856 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:34:24.640 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Authorization: Bearer null
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_401)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+18:34:25.333 [main] DEBUG com.intuit.karate - response time in milliseconds: 690
+1 < 201
+1 < Date: Wed, 17 Apr 2024 23:34:25 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 83
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713396865&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=wmAdPda%2Fo4sRqSK8C4FhUB9FJD0I2WJa%2FYeJMgERqGA%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713396865&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=wmAdPda%2Fo4sRqSK8C4FhUB9FJD0I2WJa%2FYeJMgERqGA%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"53-ah/w/gL7nnCqwAaJj06KBC8awUA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 876039c67e52b3da-MIA
+{"name":"morpheus","job":"leader","id":"89","createdAt":"2024-04-17T23:34:25.218Z"}
+
+18:34:25.893 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/user-sesion5.feature
